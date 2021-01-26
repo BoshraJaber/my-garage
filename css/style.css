@@ -1,0 +1,48 @@
+body {
+    background-image: url("/img/background.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+  }
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: rgb(49, 36, 36);
+    height: 100px;
+    padding-top: 50px;
+}
+main{
+    width: 100%;
+    display: inline-block;
+}
+.formDiv, .listDiv{
+    width : 45%;
+}
+.formDiv{
+    background-color:silver;
+    color : #4a4a4a;
+    padding: 15px;
+}
+form label, input, select{
+    margin : 15px;
+    width: 95%;
+    
+}
+.submit{
+    width: 25%;
+    text-align: center;
+    margin-left: 250px;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+
+form  input, select{
+    border: 2px solid black;
+    border-radius: 4px;
+}

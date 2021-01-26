@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Car Garage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,12 +17,12 @@
     </header>
     <main>
         <div class="formDiv">
-            <form id="formId">
+            <form id="formId" >
                 <fieldset>
                     <label for="carname">Car Name:</label><br>
                     <input type="text" id="carname" name="carName"><br>
 
-                    <label for="carsCategory">Category Model:</label>
+                    <label for="carsCategory">Category Model:</label><br>
                     <select id="carsCategory" name="carsCategory">
                         <option value="BMW">BMW</option>
                         <option value="Lexus">Lexus</option>
@@ -30,8 +32,8 @@
                         <option value="Hyundai">Hyundai</option>
                         <option value="KIA">KIA</option>
                     </select>
-
-                    <label for="modelYear">Model Year:</label>
+                    <br>
+                    <label for="modelYear">Model Year:</label><br>
                     <select id="modelYear" name="modelYear">
                         <option value="2016">2016</option>
                         <option value="2017">2017</option>
@@ -40,9 +42,9 @@
                         <option value="2020">2020</option>
                         <option value="2021">2021</option>
                     </select>
-
-                    <input type="submit" value="Submit">
-
+                    <br>
+                    <input class="submit" type="submit" value="Submit">
+                    <br>
                 </fieldset>
 
             </form>
@@ -53,6 +55,7 @@
 
             </div>
         </div>
+        <button id="clearBtn">Clear Storage</button>
     </main>
     <footer></footer>
     <script src="script.js"></script>
