@@ -59,15 +59,15 @@ function renderNewCar() {
     for (let index = 0; index < arrayOfCarObjects.length; index++) {
         
         var img = document.createElement('img');
-        img.setAttribute('src', Car.carImg);
+        img.setAttribute('src', arrayOfCarObjects[index].carImg);
         listParentElement.appendChild(img);
     
         var ul = document.createElement('ul');
         var listName = document.createElement('li');
-        listName.textContent = Car.carName;
+        listName.textContent = arrayOfCarObjects[index].carName;
     
         var listYear = document.createElement('li');
-        listYear.textContent = Car.modelYear;
+        listYear.textContent = arrayOfCarObjects[index].modelYear;
     
         ul.appendChild(listName);
         ul.appendChild(listYear);
@@ -83,6 +83,7 @@ function checkLS() {
     if (localStorage.getItem('CarsInGarage')) {
         arrayOfCarObjects = JSON.parse(localStorage.getItem('CarsInGarage'));
         renderNewCar();
+        //console.log(localStorage);
 
     }
 
