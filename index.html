@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Car Garage</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <p>My Car Garage</p>
+    </header>
+    <main>
+        <div class="formDiv">
+            <form id="formId">
+                <fieldset>
+                    <label for="carname">Car Name:</label><br>
+                    <input type="text" id="carname" name="carName"><br>
+
+                    <label for="carsCategory">Category Model:</label>
+                    <select id="carsCategory" name="carsCategory">
+                        <option value="BMW">BMW</option>
+                        <option value="Lexus">Lexus</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="KIA">KIA</option>
+                    </select>
+
+                    <label for="modelYear">Model Year:</label>
+                    <select id="modelYear" name="modelYear">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+
+            </form>
+
+        </div>
+        <div class="listDiv">
+            <div id="carInfoDiv">
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
