@@ -57,24 +57,24 @@ function formSubmit(event) {
 }
 function renderNewCar() {
     for (let index = 0; index < arrayOfCarObjects.length; index++) {
-        
+
         var img = document.createElement('img');
         img.setAttribute('src', arrayOfCarObjects[index].carImg);
         listParentElement.appendChild(img);
-    
+
         var ul = document.createElement('ul');
         var listName = document.createElement('li');
         listName.textContent = arrayOfCarObjects[index].carName;
-    
+
         var listYear = document.createElement('li');
         listYear.textContent = arrayOfCarObjects[index].modelYear;
-    
+
         ul.appendChild(listName);
         ul.appendChild(listYear);
-    
+
         listParentElement.appendChild(ul);
     }
-   
+
 
 }
 
@@ -89,7 +89,7 @@ function checkLS() {
 
 }
 
-function clearStorageFunction(){
+function clearStorageFunction() {
     localStorage.clear();
 }
 
